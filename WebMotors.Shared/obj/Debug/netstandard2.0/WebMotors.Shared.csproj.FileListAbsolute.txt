@@ -1,0 +1,17 @@
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.deps.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.AssemblyInfoInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.AssemblyInfo.cs
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.csproj.CoreCompileInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.deps.json
+C:\RepositorioGit\WebMotors\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\RepositorioGit\WebMotors\WebMotors.Shared\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.csprojAssemblyReference.cache
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.AssemblyInfoInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.AssemblyInfo.cs
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\RepositorioGit\WebMotors\WebMotors.Shared\obj\Debug\netstandard2.0\WebMotors.Shared.pdb

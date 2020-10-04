@@ -1,0 +1,113 @@
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.exe
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.deps.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.runtimeconfig.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.runtimeconfig.dev.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csprojAssemblyReference.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.AssemblyInfoInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.AssemblyInfo.cs
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.RazorTargetAssemblyInfo.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\staticwebassets\WebMotors.Api.StaticWebAssets.Manifest.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\staticwebassets\WebMotors.Api.StaticWebAssets.xml
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.genruntimeconfig.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Flunt.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Domain.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Infra.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Shared.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Domain.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Infra.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Shared.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csproj.CopyComplete
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csproj.CoreCompileInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.exe
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.deps.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.runtimeconfig.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.runtimeconfig.dev.json
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Api.xml
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Flunt.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Domain.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Infra.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Shared.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Domain.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Infra.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Api\bin\Debug\netcoreapp3.1\WebMotors.Shared.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csprojAssemblyReference.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.AssemblyInfoInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.AssemblyInfo.cs
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.RazorTargetAssemblyInfo.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.csproj.CopyComplete
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\staticwebassets\WebMotors.Api.StaticWebAssets.Manifest.cache
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\staticwebassets\WebMotors.Api.StaticWebAssets.xml
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.dll
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Api\obj\Debug\netcoreapp3.1\WebMotors.Api.genruntimeconfig.cache

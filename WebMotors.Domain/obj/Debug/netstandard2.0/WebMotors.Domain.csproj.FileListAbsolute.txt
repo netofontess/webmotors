@@ -1,0 +1,24 @@
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.deps.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csprojAssemblyReference.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfoInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfo.cs
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CoreCompileInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CopyComplete
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.deps.json
+C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csprojAssemblyReference.cache
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfoInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfo.cs
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CopyComplete
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.pdb

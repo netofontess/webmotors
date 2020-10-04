@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lJiJMeJVjuBqCXbSEu+5DXWKRKDUfruqEkYjYGypnP8suigW74zaeLoNrY2JmJSbayaoL+X9NrDWCudEwZxJ6w==",
+  "success": true,
+  "projectFilePath": "C:\\RepositorioGit\\WebMotors\\WebMotors.Shared\\WebMotors.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NETO-PC\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
+    "C:\\Users\\NETO-PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\NETO-PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,28 @@
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.deps.json
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csprojAssemblyReference.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfoInputs.cache
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfo.cs
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CopyComplete
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.dll
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.pdb
+C:\Git Repositorios\WebMotors.Api\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.deps.json
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.dll
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Infra.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Domain.dll
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Shared.dll
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.Shared.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csprojAssemblyReference.cache
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfoInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfo.cs
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CopyComplete
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.dll
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.pdb

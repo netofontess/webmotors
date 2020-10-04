@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebMotors.Api</name>
+    </assembly>
+    <members>
+        <member name="T:WebMotors.API.Config.CompressionConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Config.CompressionConfig.AddCompressionConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.API.Config.CorsConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Config.CorsConfig.AddCorsConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.API.Config.DatabaseConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Config.DatabaseConfig.AddDatabaseConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.API.Config.DependenciesConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Config.DependenciesConfig.ResolveDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.API.Config.SwaggerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Config.SwaggerConfig.AddSwaggerConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Post(WebMotors.Domain.Commands.AnuncioWebMotorsCommand)">
+            <summary>
+            Cria anuncio novo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SalesForce.API.Controllers.Base.BaseController">
+            <summary>
+            Controller base com Authorize a ser utilizado no projeto. Todos os controllers criados devem herdar de AuthorizeController ou AnonymousController
+            </summary>
+        </member>
+        <member name="M:SalesForce.API.Controllers.Base.BaseController.#ctor(WebMotors.Shared.Transactions.IUow)">
+            <summary>
+            
+            </summary>
+            <param name="uow"></param>
+        </member>
+        <member name="M:SalesForce.API.Controllers.Base.BaseController.Response(System.Object,System.Collections.Generic.IReadOnlyCollection{Flunt.Notifications.Notification})">
+            <summary>
+            Resposta a ser utilizada nas Actions de controllers que contém Commands
+            </summary>
+            <param name="result">O resultado do processamento do comando</param>
+            <param name="notifications">A lista de notificações do Handler</param>
+            <returns>Retorna a resposta conforme o resultado do processamento</returns>
+        </member>
+        <member name="M:SalesForce.API.Controllers.Base.BaseController.QueryResponse(System.Object)">
+            <summary>
+            Resposta a ser utilizada nas Actions de controllers que contém Queries
+            </summary>
+            <param name="result">O resultado do processamento da Query</param>
+            <returns>Retorna a resposta conforme o resultado do processamento</returns>
+        </member>
+        <member name="M:SalesForce.API.Controllers.Base.BaseController.ResponseException(System.Exception)">
+            <summary>
+            Resposta para exceções ocorridas no processamento
+            </summary>
+            <returns>Retorna código HTTP 500</returns>
+        </member>
+    </members>
+</doc>
