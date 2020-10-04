@@ -1,9 +1,9 @@
 ﻿using Flunt.Notifications;
 using Microsoft.AspNetCore.Mvc;
-using SalesForce.API.Controllers.Base;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using WebMotors.API.Controllers.Base;
 using WebMotors.Domain.Commands;
 using WebMotors.Domain.Commands.Result;
 using WebMotors.Domain.Entities;
@@ -18,7 +18,6 @@ namespace WebMotors.Api.Controllers
     /// Controller responsável por operações na Tabela Anúncios Webmotors
     /// </summary>
     [ApiController]
-    [Route("[controller]")]
     public class AnuncioController : BaseController
     {
         private readonly AnuncioWebMotorsCommandHandler _handler;
@@ -75,7 +74,49 @@ namespace WebMotors.Api.Controllers
         [Route("api/[controller]")]
         [ProducesResponseType(typeof(CommandResult), 200)]
         [ProducesResponseType(typeof(List<Notification>), 400)]
-        public async Task<IActionResult> Post([FromBody] AnuncioWebMotorsCommand command)
+        public async Task<IActionResult> Post([FromBody] CreateAnuncioWebMotorsCommand command)
+        {
+            try
+            {
+                return await Response(_handler.Handle(command), _handler.Notifications);
+            }
+            catch (Exception e)
+            {
+                return await ResponseException(e);
+            }
+        }
+
+        /// <summary>
+        /// Alteração de Anúncio
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        [HttpPut]
+        [Route("api/[controller]")]
+        [ProducesResponseType(typeof(CommandResult), 200)]
+        [ProducesResponseType(typeof(List<Notification>), 400)]
+        public async Task<IActionResult> Put([FromBody] UpdateAnuncioWebMotorsCommand command)
+        {
+            try
+            {
+                return await Response(_handler.Handle(command), _handler.Notifications);
+            }
+            catch (Exception e)
+            {
+                return await ResponseException(e);
+            }
+        }
+
+        /// <summary>
+        /// Deletar anúncio
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("api/[controller]")]
+        [ProducesResponseType(typeof(CommandResult), 200)]
+        [ProducesResponseType(typeof(List<Notification>), 400)]
+        public async Task<IActionResult> Delete([FromBody] DeleteAnuncioWebMotorsCommand command)
         {
             try
             {

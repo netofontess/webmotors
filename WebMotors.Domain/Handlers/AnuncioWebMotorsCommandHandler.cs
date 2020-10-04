@@ -15,7 +15,7 @@ namespace WebMotors.Domain.Handlers
             _repository = repository;
         }
 
-        public ICommandResult Handle(AnuncioWebMotorsCommand command)
+        public ICommandResult Handle(CreateAnuncioWebMotorsCommand command)
         {
             //Valida command (fast validation)
             command.Validate();
@@ -38,6 +38,48 @@ namespace WebMotors.Domain.Handlers
             _repository.Create(anuncio);
 
             return new CommandResult(anuncio, "Anúncio criado com sucesso");
+        }
+
+        public ICommandResult Handle(UpdateAnuncioWebMotorsCommand command)
+        {
+            //Valida command (fast validation)
+            command.Validate();
+            if (command.Invalid)
+            {
+                AddNotifications(command);
+                return null;
+            }
+
+            var anuncio = _repository.GetById(command.Id);
+
+            if (anuncio == null)
+                return null;
+
+            //Atualiza anúncio
+            anuncio.Update(command.Marca, command.Modelo, command.Versao, command.Ano, command.Quilometragem, command.Observacao);
+
+            //Valida campos
+            if (anuncio.Invalid)
+            {
+                AddNotifications(anuncio);
+                return null;
+            }
+
+            _repository.Update(anuncio);
+
+            return new CommandResult(anuncio, "Anúncio atualizado com sucesso");
+        }
+
+        public ICommandResult Handle(DeleteAnuncioWebMotorsCommand command)
+        {
+            var anuncio = _repository.GetById(command.Id);
+
+            if (anuncio == null)
+                return null;
+
+            _repository.Delete(anuncio);
+
+            return new CommandResult(anuncio, "Anúncio removido com sucesso");
         }
     }
 }

@@ -35,19 +35,180 @@ $(document).ready(function(){
 			$("#selectAll").prop("checked", false);
 		}
     });
-    const UrlApi = 'https://localhost:44319/';
+
+    const UrlApi = 'https://localhost:44319/api/';
+
+    function removeAnuncio(id){
+        const fullPath = UrlApi + 'Anuncio';
+        fetch(fullPath, {
+                method: "DELETE",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    id: id
+                })
+        }).then(response => response.text())
+            .then(function(data){
+                console.log(data);
+                loadTable();
+            })  
+            .catch(error => console.log("Error detected: " + error));
+    }
 
     function loadTable(){
-        const fullPath = UrlApi + 'Anuncio/api/Anuncio';
+        const fullPath = UrlApi + 'Anuncio';
         fetch(fullPath).then(function(res){ 
-        res.json().then(function(data){
-            console.log(data)
-        })
+            res.json().then(function(data){
+                var data_table = '';
+                $.each(data.data, function(index, value){
+                    data_table += '<tr>';
+                    data_table += '<td>'+value.id+'</td>';
+                    data_table += '<td>'+value.marca+'</td>';
+                    data_table += '<td>'+value.modelo+'</td>';
+                    data_table += '<td>'+value.versao+'</td>';
+                    data_table += '<td>' +
+							'<a href="#editAnuncioModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>' +
+							'<a href="#" class="delete" data-id="'+value.id+'"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>' + 
+						'</td>';
+                    data_table += '</tr>';
+                });
+                $(".table-anuncio tbody").empty();
+                $(".table-anuncio tbody").append(data_table);
+                $('.delete').on('click', function() {
+                    var id = $(this).data("id");
+                    console.log(id);
+                    removeAnuncio(id);
+                });
+            });
+            
         })
         .catch(function(err){
             console.error('Não foi possível achar a informação', err)
         });
     }
+
+    function loadMarcasDrop(){
+        const fullPath = UrlApi + 'Marca';
+        fetch(fullPath).then(function(res){ 
+            res.json().then(function(data){
+                var data_drop = '<option value=""></option>';
+                $.each(data.data, function(index, value){
+                    data_drop += "<option value='"+value.id+"'>"+value.name+"</option>";
+                });
+                $(".select-marca").append(data_drop);
+            });
+            
+        })
+        .catch(function(err){
+            console.error('Não foi possível achar a informação', err)
+        });
+    }
+
+    $('.select-marca').on('change', function() {
+        $(".select-modelo").empty();
+        if (this.value == '') return true;
+        loadModelosDrop(this.value);
+    });
+
+    function loadModelosDrop(id){
+        if (id == null) return true;
+
+        const fullPath = UrlApi + 'Modelo?Id='+id;
+        fetch(fullPath).then(function(res){ 
+            res.json().then(function(data){
+                var data_drop = '<option value=""></option>';
+                $.each(data.data, function(index, value){
+                    data_drop += "<option value='"+value.id+"'>"+value.name+"</option>";
+                });
+                $(".select-modelo").append(data_drop);
+            });
+            
+        })
+        .catch(function(err){
+            console.error('Não foi possível achar a informação', err)
+        });
+    }
+
+    $('.select-modelo').on('change', function() {
+        $(".select-versao").empty();
+        if (this.value == '') return true;
+        loadVersaoDrop(this.value);
+    });
+
+    function loadVersaoDrop(id){
+        if (id == null) return true;
+
+        const fullPath = UrlApi + 'Versao?Id='+id;
+        fetch(fullPath).then(function(res){ 
+            res.json().then(function(data){
+                var data_drop = '<option value=""></option>';
+                $.each(data.data, function(index, value){
+                    data_drop += "<option value='"+value.id+"'>"+value.name+"</option>";
+                });
+                $(".select-versao").append(data_drop);
+            });
+            
+        })
+        .catch(function(err){
+            console.error('Não foi possível achar a informação', err)
+        });
+    }
+
+     $("#form-novo").submit(function(event){
+            event.preventDefault();
+        const fullPath = UrlApi + 'Anuncio';
+        fetch(fullPath, {
+                method: "POST",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    marca: $('#form-novo .select-marca').find('option:selected').text(),
+                    modelo: $('#form-novo .select-modelo').find('option:selected').text(),
+                    versao: $('#form-novo .select-versao').find('option:selected').text(),
+                    ano: $('#form-novo').find('input[name="ano"]').val(),
+                    quilometragem: $('#form-novo').find('input[name="quilometragem"]').val(),
+                    observacao: $('#form-novo').find('input[name="observacao"]').val()
+                })
+        }).then(response => response.text())
+            .then(function(data){
+                $('#addAnuncioModal').modal('toggle');
+                loadTable();
+            })
+            .catch(error => console.log("Error detected: " + error));
+    });
+
+    $("#form-edit").submit(function(event){
+            event.preventDefault();
+        const fullPath = UrlApi + 'Anuncio';
+        fetch(fullPath, {
+                method: "PUT",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    id: 1, //Somente irá editar o id 1, para exemplo de endpoint para edição
+                    marca: $('#form-edit .select-marca').find('option:selected').text(),
+                    modelo: $('#form-edit .select-modelo').find('option:selected').text(),
+                    versao: $('#form-edit .select-versao').find('option:selected').text(),
+                    ano: $('#form-edit').find('input[name="ano"]').val(),
+                    quilometragem: $('#form-edit').find('input[name="quilometragem"]').val(),
+                    observacao: $('#form-edit').find('input[name="observacao"]').val()
+                })
+        }).then(response => response.text())
+            .then(function(data){
+                $('#addAnuncioModal').modal('toggle');
+                loadTable();
+            })   
+            .catch(error => console.log("Error detected: " + error));
+    });
+
+    loadTable();
+    loadMarcasDrop();
 });
 </script>
 </head>
@@ -58,14 +219,14 @@ $(document).ready(function(){
 			<div class="table-title">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>WebMotors <b>Anúncios</b></h2>
+						<h2>Webmotors <b>Anúncios</b></h2>
 					</div>
 					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Novo</span></a>					
+						<a href="#addAnuncioModal" class="btn btn-dark" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Novo</span></a>					
 					</div>
 				</div>
 			</div>
-			<table class="table table-striped table-hover">
+			<table class="table table-striped table-hover table-anuncio">
 				<thead>
 					<tr>
 						<th>Cód</th>
@@ -76,77 +237,27 @@ $(document).ready(function(){
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Thomas Hardy</td>
-						<td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
-						<td>(171) 555-2222</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>Dominique Perrier</td>
-						<td>dominiqueperrier@mail.com</td>
-						<td>Obere Str. 57, Berlin, Germany</td>
-						<td>(313) 555-5735</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>Maria Anders</td>
-						<td>mariaanders@mail.com</td>
-						<td>25, rue Lauriston, Paris, France</td>
-						<td>(503) 555-9931</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>Fran Wilson</td>
-						<td>franwilson@mail.com</td>
-						<td>C/ Araquil, 67, Madrid, Spain</td>
-						<td>(204) 619-5731</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>					
-					<tr>
-						<td>Martin Blank</td>
-						<td>martinblank@mail.com</td>
-						<td>Via Monte Bianco 34, Turin, Italy</td>
-						<td>(480) 631-2097</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr> 
 				</tbody>
 			</table>
 			<div class="clearfix">
 				<ul class="pagination">
-					<li class="page-item disabled"><a href="#">Previous</a></li>
-					<li class="page-item"><a href="#" class="page-link">1</a></li>
+					<li class="page-item disabled"><a href="#">Anterior</a></li>
+					<li class="page-item active"><a href="#" class="page-link">1</a></li>
 					<li class="page-item"><a href="#" class="page-link">2</a></li>
-					<li class="page-item active"><a href="#" class="page-link">3</a></li>
+					<li class="page-item"><a href="#" class="page-link">3</a></li>
 					<li class="page-item"><a href="#" class="page-link">4</a></li>
 					<li class="page-item"><a href="#" class="page-link">5</a></li>
-					<li class="page-item"><a href="#" class="page-link">Next</a></li>
+					<li class="page-item"><a href="#" class="page-link">Próximo</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>        
 </div>
 <!-- Novo Modal HTML -->
-<div id="addEmployeeModal" class="modal fade">
+<div id="addAnuncioModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form>
+			<form id="form-novo">
 				<div class="modal-header">						
 					<h4 class="modal-title">Novo Anúncio</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -154,79 +265,81 @@ $(document).ready(function(){
 				<div class="modal-body">					
 					<div class="form-group">
 						<label>Marca</label>
-						<input type="text" class="form-control" required>
+						<select class="form-control select-marca" name="marca">
+                        </select>
 					</div>
 					<div class="form-group">
 						<label>Modelo</label>
-						<input type="email" class="form-control" required>
+						<select class="form-control select-modelo" name="modelo">
+                        </select>
 					</div>
 					<div class="form-group">
 						<label>Versão</label>
-						<textarea class="form-control" required></textarea>
+						<select class="form-control select-versao" name="versao">
+                        </select>
 					</div>
 					<div class="form-group">
 						<label>Ano</label>
-						<input type="text" class="form-control" required>
+						<input type="number" class="form-control" required name="ano">
                     </div>
                     <div class="form-group">
 						<label>Quilometragem</label>
-						<input type="text" class="form-control" required>
+						<input type="number" class="form-control" required name="quilometragem">
                     </div>
                     <div class="form-group">
 						<label>Observação</label>
-						<input type="text" class="form-control" required>
+						<input type="text" class="form-control" required name="observacao">
 					</div>					
 				</div>
 				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-success" value="Add">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+					<input type="submit" class="btn btn-success btn-add" value="Adicionar">
 				</div>
 			</form>
 		</div>
 	</div>
 </div>
 <!-- Editar Modal HTML -->
-<div id="editEmployeeModal" class="modal fade">
+<div id="editAnuncioModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form>
+			<form id="form-edit">
 				<div class="modal-header">						
 					<h4 class="modal-title">Editar Anúncio</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">					
 					<div class="form-group">
-						<label>Id</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
 						<label>Marca</label>
-						<input type="email" class="form-control" required>
+						<select class="form-control select-marca" name="marca">
+                        </select>
 					</div>
 					<div class="form-group">
 						<label>Modelo</label>
-						<textarea class="form-control" required></textarea>
+						<select class="form-control select-modelo" name="modelo">
+                        </select>
 					</div>
 					<div class="form-group">
 						<label>Versão</label>
-						<input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
+						<select class="form-control select-versao" name="versao">
+                        </select>
+					</div>
+					<div class="form-group">
 						<label>Ano</label>
-						<input type="text" class="form-control" required>
+						<input type="number" class="form-control" required name="ano">
                     </div>
                     <div class="form-group">
 						<label>Quilometragem</label>
-						<input type="text" class="form-control" required>
+						<input type="number" class="form-control" required name="quilometragem">
                     </div>
                     <div class="form-group">
 						<label>Observação</label>
-						<input type="text" class="form-control" required>
-					</div>					
+						<input type="text" class="form-control" required name="observacao">
+					</div>						
 				</div>
 				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-info" value="Save">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+					<input type="submit" class="btn btn-info" value="Salvar">
 				</div>
 			</form>
 		</div>
@@ -242,12 +355,12 @@ $(document).ready(function(){
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">					
-					<p>Are you sure you want to delete these Records?</p>
-					<p class="text-warning"><small>This action cannot be undone.</small></p>
+					<p>Tem certeza que deseja excluir este anúncio?</p>
+					<p class="text-warning"><small>Essa ação não pode ser desfeita.</small></p>
 				</div>
 				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-danger" value="Delete">
+					<input type="button" class="btn btn-default" data-dismiss="modal" value="Não">
+					<input type="submit" class="btn btn-danger" value="Sim">
 				</div>
 			</form>
 		</div>

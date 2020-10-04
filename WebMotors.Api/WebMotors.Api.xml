@@ -65,6 +65,38 @@
             <param name="services"></param>
             <returns></returns>
         </member>
+        <member name="T:WebMotors.API.Controllers.Base.BaseController">
+            <summary>
+            Controller base com Authorize a ser utilizado no projeto. Todos os controllers criados devem herdar de AuthorizeController ou AnonymousController
+            </summary>
+        </member>
+        <member name="M:WebMotors.API.Controllers.Base.BaseController.#ctor(WebMotors.Shared.Transactions.IUow)">
+            <summary>
+            
+            </summary>
+            <param name="uow"></param>
+        </member>
+        <member name="M:WebMotors.API.Controllers.Base.BaseController.Response(System.Object,System.Collections.Generic.IReadOnlyCollection{Flunt.Notifications.Notification})">
+            <summary>
+            Resposta a ser utilizada nas Actions de controllers que contém Commands
+            </summary>
+            <param name="result">O resultado do processamento do comando</param>
+            <param name="notifications">A lista de notificações do Handler</param>
+            <returns>Retorna a resposta conforme o resultado do processamento</returns>
+        </member>
+        <member name="M:WebMotors.API.Controllers.Base.BaseController.QueryResponse(System.Object)">
+            <summary>
+            Resposta a ser utilizada nas Actions de controllers que contém Queries
+            </summary>
+            <param name="result">O resultado do processamento da Query</param>
+            <returns>Retorna a resposta conforme o resultado do processamento</returns>
+        </member>
+        <member name="M:WebMotors.API.Controllers.Base.BaseController.ResponseException(System.Exception)">
+            <summary>
+            Resposta para exceções ocorridas no processamento
+            </summary>
+            <returns>Retorna código HTTP 500</returns>
+        </member>
         <member name="T:WebMotors.Api.Controllers.AnuncioController">
             <summary>
             Controller responsável por operações na Tabela Anúncios Webmotors
@@ -88,44 +120,74 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:WebMotors.Api.Controllers.AnuncioController.Post(WebMotors.Domain.Commands.AnuncioWebMotorsCommand)">
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Post(WebMotors.Domain.Commands.CreateAnuncioWebMotorsCommand)">
             <summary>
             Cria anuncio novo
             </summary>
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="T:SalesForce.API.Controllers.Base.BaseController">
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Put(WebMotors.Domain.Commands.UpdateAnuncioWebMotorsCommand)">
             <summary>
-            Controller base com Authorize a ser utilizado no projeto. Todos os controllers criados devem herdar de AuthorizeController ou AnonymousController
+            Alteração de Anúncio
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Delete(WebMotors.Domain.Commands.DeleteAnuncioWebMotorsCommand)">
+            <summary>
+            Deletar anúncio
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.Api.Controllers.MarcaController">
+            <summary>
+            Controller responsável por operações de chamada Api Marcas
             </summary>
         </member>
-        <member name="M:SalesForce.API.Controllers.Base.BaseController.#ctor(WebMotors.Shared.Transactions.IUow)">
-            <summary>
-            
-            </summary>
+        <member name="M:WebMotors.Api.Controllers.MarcaController.#ctor(WebMotors.Shared.Transactions.IUow,WebMotors.Domain.Interfaces.Repository.IMarcaRepository)">
+            <summary></summary>
             <param name="uow"></param>
+            <param name="repository"></param>
         </member>
-        <member name="M:SalesForce.API.Controllers.Base.BaseController.Response(System.Object,System.Collections.Generic.IReadOnlyCollection{Flunt.Notifications.Notification})">
+        <member name="M:WebMotors.Api.Controllers.MarcaController.Get">
             <summary>
-            Resposta a ser utilizada nas Actions de controllers que contém Commands
+            Lista marcas
             </summary>
-            <param name="result">O resultado do processamento do comando</param>
-            <param name="notifications">A lista de notificações do Handler</param>
-            <returns>Retorna a resposta conforme o resultado do processamento</returns>
+            <returns></returns>
         </member>
-        <member name="M:SalesForce.API.Controllers.Base.BaseController.QueryResponse(System.Object)">
+        <member name="T:WebMotors.Api.Controllers.ModeloController">
             <summary>
-            Resposta a ser utilizada nas Actions de controllers que contém Queries
+            Controller responsável por operações de chamada Api Modelos
             </summary>
-            <param name="result">O resultado do processamento da Query</param>
-            <returns>Retorna a resposta conforme o resultado do processamento</returns>
         </member>
-        <member name="M:SalesForce.API.Controllers.Base.BaseController.ResponseException(System.Exception)">
+        <member name="M:WebMotors.Api.Controllers.ModeloController.#ctor(WebMotors.Shared.Transactions.IUow,WebMotors.Domain.Interfaces.Repository.IModeloRepository)">
+            <summary></summary>
+            <param name="uow"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.ModeloController.Get(WebMotors.Domain.Filtros.Filtro)">
             <summary>
-            Resposta para exceções ocorridas no processamento
+            Lista modelos
             </summary>
-            <returns>Retorna código HTTP 500</returns>
+            <returns></returns>
+        </member>
+        <member name="T:WebMotors.Api.Controllers.VersaoController">
+            <summary>
+            Controller responsável por operações de chamada Api Marcas
+            </summary>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.VersaoController.#ctor(WebMotors.Shared.Transactions.IUow,WebMotors.Domain.Interfaces.Repository.IVersaoRepository)">
+            <summary></summary>
+            <param name="uow"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.VersaoController.Get(WebMotors.Domain.Filtros.Filtro)">
+            <summary>
+            Lista marcas
+            </summary>
+            <returns></returns>
         </member>
     </members>
 </doc>

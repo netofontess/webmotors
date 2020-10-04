@@ -4,7 +4,7 @@ using WebMotors.Shared.Commands;
 
 namespace WebMotors.Domain.Commands
 {
-    public class AnuncioWebMotorsCommand : Notifiable, ICommand
+    public class CreateAnuncioWebMotorsCommand : Notifiable, ICommand
     {
         public string Marca { get; set; }
         public string Modelo { get; set; }

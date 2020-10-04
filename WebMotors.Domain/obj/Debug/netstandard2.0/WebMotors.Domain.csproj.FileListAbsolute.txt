@@ -18,7 +18,7 @@ C:\RepositorioGit\WebMotors\WebMotors.Domain\bin\Debug\netstandard2.0\WebMotors.
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csprojAssemblyReference.cache
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfoInputs.cache
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.AssemblyInfo.cs
-C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CoreCompileInputs.cache
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CopyComplete
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.dll
 C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Domain\obj\Debug\netstandard2.0\WebMotors.Domain.csproj.CoreCompileInputs.cache

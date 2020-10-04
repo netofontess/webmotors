@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace WebMotors.Domain.Filtros
 {
     public class Filtro
     {
+        [BindRequired]
         public long Id { get; set; }
     }
 }

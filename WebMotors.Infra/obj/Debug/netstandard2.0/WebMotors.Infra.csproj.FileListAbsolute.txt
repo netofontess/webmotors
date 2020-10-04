@@ -22,7 +22,7 @@ C:\RepositorioGit\WebMotors\WebMotors.Infra\bin\Debug\netstandard2.0\WebMotors.S
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csprojAssemblyReference.cache
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfoInputs.cache
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.AssemblyInfo.cs
-C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CoreCompileInputs.cache
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CopyComplete
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.dll
 C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.pdb
+C:\RepositorioGit\WebMotors\WebMotors.Infra\obj\Debug\netstandard2.0\WebMotors.Infra.csproj.CoreCompileInputs.cache

@@ -17,6 +17,9 @@ namespace WebMotors.Infra
 
             //Repositories
             services.AddTransient<IAnuncioWebMotorsRepository, AnuncioWebMotorsRepository>();
+            services.AddTransient<IMarcaRepository, MarcaRepository>();
+            services.AddTransient<IModeloRepository, ModeloRepository>();
+            services.AddTransient<IVersaoRepository, VersaoRepository>();
 
             return services;
         }

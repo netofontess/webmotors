@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebMotors.Shared.Transactions;
 
-namespace SalesForce.API.Controllers.Base
+namespace WebMotors.API.Controllers.Base
 {
     /// <summary>
     /// Controller base com Authorize a ser utilizado no projeto. Todos os controllers criados devem herdar de AuthorizeController ou AnonymousController
