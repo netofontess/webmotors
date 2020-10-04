@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using WebMotors.Domain.Entities;
+using WebMotors.Domain.Filtros;
 using WebMotors.Domain.Interfaces.Repository;
 
 namespace WebMotors.Infra.Database.Repository
@@ -33,6 +34,11 @@ namespace WebMotors.Infra.Database.Repository
         public IEnumerable<AnuncioWebmotors> GetAll()
         {
             return _writerContext.AnuncioWebmotors.AsNoTracking().ToList();
+        }
+        
+        public AnuncioWebmotors GetAll(Filtro filtro)
+        {
+            return _writerContext.AnuncioWebmotors.AsNoTracking().FirstOrDefault();
         }
 
         public AnuncioWebmotors GetById(long id)

@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 using WebMotors.Domain.Commands;
 using WebMotors.Domain.Commands.Result;
 using WebMotors.Domain.Entities;
+using WebMotors.Domain.Filtros;
 using WebMotors.Domain.Handlers;
 using WebMotors.Domain.Interfaces.Repository;
 using WebMotors.Shared.Transactions;
 
 namespace WebMotors.Api.Controllers
 {
+    /// <summary>
+    /// Controller responsável por operações na Tabela Anúncios Webmotors
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class AnuncioController : BaseController
@@ -20,10 +24,46 @@ namespace WebMotors.Api.Controllers
         private readonly AnuncioWebMotorsCommandHandler _handler;
         private readonly IAnuncioWebMotorsRepository _repository;
 
+        /// <summary></summary>
+        /// <param name="uow"></param>
+        /// <param name="handler"></param>
+        /// <param name="repository"></param>
         public AnuncioController(IUow uow, AnuncioWebMotorsCommandHandler handler, IAnuncioWebMotorsRepository repository) : base(uow)
         {
             _handler = handler;
             _repository = repository;
+        }
+
+        /// <summary>
+        /// Lista anúncios
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("api/[controller]")]
+        [ProducesResponseType(typeof(AnuncioWebmotors), 200)]
+        public Task<IActionResult> Get()
+        {
+            try
+            {
+                return QueryResponse(_repository.GetAll());
+            }
+            catch (Exception e) { return ResponseException(e); }
+        }
+        
+        /// <summary>
+        /// Lista anúncio
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("api/[controller]/filtro")]
+        [ProducesResponseType(typeof(AnuncioWebmotors), 200)]
+        public Task<IActionResult> Get([FromQuery] Filtro filtro)
+        {
+            try
+            {
+                return QueryResponse(_repository.GetAll(filtro));
+            }
+            catch (Exception e) { return ResponseException(e); }
         }
 
         /// <summary>

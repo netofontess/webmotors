@@ -21,12 +21,12 @@ namespace WebMotors.Domain.Entities
             Validate();
         }
 
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
-        public string Versao { get; set; }
-        public int Ano { get; set; }
-        public int Quilometragem { get; set; }
-        public string Observacao { get; set; }
+        public string Marca { get; private set; }
+        public string Modelo { get; private set; }
+        public string Versao { get; private set; }
+        public int Ano { get; private set; }
+        public int Quilometragem { get; private set; }
+        public string Observacao { get; private set; }
 
         public void Update(string marca,
                         string modelo,

@@ -65,6 +65,29 @@
             <param name="services"></param>
             <returns></returns>
         </member>
+        <member name="T:WebMotors.Api.Controllers.AnuncioController">
+            <summary>
+            Controller responsável por operações na Tabela Anúncios Webmotors
+            </summary>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.#ctor(WebMotors.Shared.Transactions.IUow,WebMotors.Domain.Handlers.AnuncioWebMotorsCommandHandler,WebMotors.Domain.Interfaces.Repository.IAnuncioWebMotorsRepository)">
+            <summary></summary>
+            <param name="uow"></param>
+            <param name="handler"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Get">
+            <summary>
+            Lista anúncios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebMotors.Api.Controllers.AnuncioController.Get(WebMotors.Domain.Filtros.Filtro)">
+            <summary>
+            Lista anúncio
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:WebMotors.Api.Controllers.AnuncioController.Post(WebMotors.Domain.Commands.AnuncioWebMotorsCommand)">
             <summary>
             Cria anuncio novo
