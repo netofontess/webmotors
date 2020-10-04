@@ -13,12 +13,12 @@ namespace WebMotors.Infra.Migrations
                 {
                     Id = table.Column<long>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Marca = table.Column<string>(nullable: true),
-                    Modelo = table.Column<string>(nullable: true),
-                    Versao = table.Column<string>(nullable: true),
+                    Marca = table.Column<string>(maxLength: 45, nullable: false),
+                    Modelo = table.Column<string>(maxLength: 45, nullable: false),
+                    Versao = table.Column<string>(maxLength: 45, nullable: false),
                     Ano = table.Column<int>(nullable: false),
                     Quilometragem = table.Column<int>(nullable: false),
-                    Observacao = table.Column<string>(nullable: true)
+                    Observacao = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {

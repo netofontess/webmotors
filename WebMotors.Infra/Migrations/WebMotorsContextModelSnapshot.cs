@@ -26,19 +26,26 @@ namespace WebMotors.Infra.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Marca")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.Property<string>("Modelo")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.Property<string>("Observacao")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("Quilometragem")
                         .HasColumnType("int");
 
                     b.Property<string>("Versao")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.HasKey("Id");
 

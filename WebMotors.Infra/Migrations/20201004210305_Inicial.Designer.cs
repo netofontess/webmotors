@@ -8,7 +8,7 @@ using WebMotors.Infra;
 namespace WebMotors.Infra.Migrations
 {
     [DbContext(typeof(WebMotorsContext))]
-    [Migration("20201004032909_Inicial")]
+    [Migration("20201004210305_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,19 +28,26 @@ namespace WebMotors.Infra.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Marca")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.Property<string>("Modelo")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.Property<string>("Observacao")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("Quilometragem")
                         .HasColumnType("int");
 
                     b.Property<string>("Versao")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(45) CHARACTER SET utf8mb4")
+                        .HasMaxLength(45);
 
                     b.HasKey("Id");
 
